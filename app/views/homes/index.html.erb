@@ -1,0 +1,439 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Communicant. Communication for parents who can't. ">
+    <meta name="author" content="">
+
+    <title>Communicant</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+  
+    <!-- Custom CSS-->
+    <link href="/css/general.css" rel="stylesheet">
+  
+   <!-- Owl-Carousel -->
+    <link href="/css/custom.css" rel="stylesheet">
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.theme.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/animate.css" rel="stylesheet">
+  
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="/css/magnific-popup.css"> 
+  
+  <script src="/js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+</head>
+
+<body id="home">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status"></div>
+  </div>
+  
+  <!-- FullScreen -->
+    <div class="intro-header">
+    <div class="col-xs-12 text-center abcen1">
+      <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Communicant</h1>
+      <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Communication for Parents who Can't</h3>
+    </div>    
+        <!-- /.container -->
+    <div class="col-xs-12 text-center abcen wow fadeIn">
+      <div class="button_down "> 
+        <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="/img/icon/circle.png" alt=""> </a>
+      </div>
+    </div>
+    </div>
+  
+  <!-- NavBar-->
+  <nav class="navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">Communicant</a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          
+          <li class="menuItem"><a href="#whatis">What is it?</a></li>
+          <li class="menuItem"><a href="#screen">Screenshot</a></li>
+          <li class="menuItem"><a href="#credits">Credits</a></li>
+          <li class="menuItem"><a href="#contact">Contact</a></li>
+          <% if user_signed_in? %>
+          <li class="menuItem">
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+          </li>
+        <% else %>
+          <li>
+          <%= link_to('Login', new_user_session_path)  %>  
+          </li>
+        <% end %>
+        </ul>
+      </div>
+       
+    </div>
+  </nav> 
+  
+  <!-- What is -->
+  <div id="whatis" class="content-section-b" style="border-top: 0">
+    <div class="container">
+
+      <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+        <h2>What is it?</h2>
+        <p class="lead" style="margin-top:0">A simple communication app.</p>
+        
+      </div>
+      
+      <div class="row">
+      
+        <div class="col-sm-4 wow fadeInDown text-center">
+          <img class="rotate" src="/img/icon/bank.svg" alt="Expenses">
+          <h3>Track Expenses</h3>
+          <p class="lead">Easily add and view balances to common expenses such as medical bills and after school activities. </p>
+
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-sm-4 wow fadeInDown text-center">
+          <img  class="rotate" src="/img/icon/calendar.svg" alt="Events">
+           <h3>Schedule Events</h3>
+           <p class="lead">Coordinate events such as pick up dates/times, appointments, and playdates. </p>
+
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-sm-4 wow fadeInDown text-center">
+          <img  class="rotate" src="/img/icon/mail.svg" alt="Messaging">
+           <h3>Safe, Effective Messaging</h3>
+          <p class="lead">For more difficult situations, select from pre-written messages, or opt to send and receive messages through a mediator.</p>
+
+        </div><!-- /.col-lg-4 -->
+        
+      </div><!-- /.row -->
+        
+      <div class="row tworow">
+      
+        <div class="col-sm-4  wow fadeInDown text-center">
+          <img class="rotate" src="/img/icon/folder.svg" alt="Generic placeholder image">
+          <h3>Keep Records</h3>
+          <p class="lead">Our app will provide a way to easily print, email, or send your records as pdf files. </p>
+         <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-sm-4 wow fadeInDown text-center">
+          <img  class="rotate" src="/img/icon/beacon.svg" alt="Generic placeholder image">
+           <h3>Involve a Mediator</h3>
+           <p class="lead">Court-ordered or not, our mediator dashboard allows ease of use in tracking case activity, adding events, and sending messages to Parents. </p>
+           <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+        </div><!-- /.col-lg-4 -->
+        
+        <div class="col-sm-4 wow fadeInDown text-center">
+          <img  class="rotate" src="/img/icon/browser.svg" alt="Generic placeholder image">
+           <h3>Make Payments Online</h3>
+         <p class="lead">Payments for listed expenses will safely be made online through the app, and once confirmed, are able to be viewed on the Expenses page. </p>
+
+        </div><!-- /.col-lg-4 -->
+        
+      </div><!-- /.row -->
+    </div>
+  </div>
+  
+  <!-- Screenshot -->
+  <div id="screen" class="content-section-b">
+        <div class="container">
+          <div class="row" >
+       <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
+        <h2>Screenshots</h2>
+        <p class="lead" style="margin-top:0">Access Communicant on any device. </p>
+       </div>
+      </div>
+        <div class="row wow bounceInUp" >
+              <div id="owl-demo" class="owl-carousel">
+        
+        <a href="/img/slide/N1.png" class="image-link">
+          <div class="item">
+            <img  class="img-responsive img-rounded" src="/img/slide/N1.png" alt="Owl Image">
+          </div>
+        </a>
+        
+               <a href="/img/slide/N2.png" class="image-link">
+          <div class="item">
+            <img  class="img-responsive img-rounded" src="/img/slide/N2.png" alt="Owl Image">
+          </div>
+        </a>
+        
+        <a href="/img/slide/N3.png" class="image-link">
+          <div class="item">
+            <img  class="img-responsive img-rounded" src="/img/slide/N3.png" alt="Owl Image">
+          </div>
+        </a>
+        
+        <a href="/img/slide/N4.png" class="image-link">
+          <div class="item">
+            <img  class="img-responsive img-rounded" src="img/slide/N4.png" alt="Owl Image">
+          </div>
+        </a>
+        
+               <a href="/img/slide/N2.png" class="image-link">
+          <div class="item">
+            <img  class="img-responsive img-rounded" src="/img/slide/N2.png" alt="Owl Image">
+          </div>
+        </a>
+        
+        <a href="/img/slide/N3.png" class="image-link">
+          <div class="item">
+            <img  class="img-responsive img-rounded" src="/img/slide/N3.png" alt="Owl Image">
+          </div>
+        </a>
+              </div>       
+          </div>
+        </div>
+
+
+  </div>
+  
+  <div  class="content-section-c ">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center white">
+        <h2>Get Live Updates</h2>
+        <p class="lead" style="margin-top:0">Receive emails about upcoming releases and new features. </p>
+       </div>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <div class="mockup-content">
+            <div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
+              <button type="button "><span>Subscribe to our Newsletter</span></button>
+              <div class="morph-content">
+                <div>
+                  <div class="content-style-form content-style-form-4 ">
+                    <h2 class="morph-clone">Subscribe to our Newsletter</h2>
+                    <form>
+                      <p><label>Your Email Address</label><input type="text"/></p>
+                      <p><button>Subscribe me</button></p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>  
+      </div>>
+    </div>
+  </div>  
+  
+  <!-- Credits -->
+  <div id="credits" class="content-section-a">
+    <div class="container">
+      <div class="row">
+      
+      <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+        <h2>Credits</h2>
+        <p class="lead" style="margin-top:0">A special thanks to The Iron Yard-Durham.</p>
+       </div>
+       
+        <div class="col-sm-6  block wow bounceIn">
+          <div class="row">
+            <div class="col-md-4 box-icon rotate"> 
+              <i class="fa fa-magic fa-4x "> </i> 
+            </div>
+            <div class="col-md-8 box-ct">
+              <h3> Rosa Lopez Sanchez </h3>
+              <p> Front End Engineer, works with Angular, Javascript, and currently updating a CakePHP based site. Based out of Durham, NC. </p>
+            <li class="social"> 
+            <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+            <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
+            <a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+            <a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
+            </li>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 block wow bounceIn">
+          <div class="row">
+            <div class="col-md-4 box-icon rotate"> 
+            <i class="fa fa-bolt fa-4x "> </i> 
+            </div>
+            <div class="col-md-8 box-ct">
+            <h3> Renée Quijano </h3>
+            <p> PHP and Ruby developer, with a passion for increasing diversity in tech and creating a community of support for women in technology. Based out of Charlotte, NC. </p> 
+            <li class="social"> 
+            <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+            <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
+            <a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+            <a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
+            </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row tworow">
+        <div class="col-sm-6  block wow bounceIn">
+          <div class="row">
+            <div class="col-md-4 box-icon rotate"> 
+              <i class="fa fa-flask fa-4x "> </i> 
+            </div>
+            <div class="col-md-8 box-ct">
+              <h3> Jasmine Baik </h3>
+              <p> Front End Engineer and graphic designer, helps teach Front End Engineering at The Iron Yard, currently working with Angular and Javascript at Glen Raven, Inc. </p>
+              <li class="social"> 
+              <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+              <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
+              <a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+              <a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 block wow bounceIn">
+          <div class="row">
+            <div class="col-md-4 box-icon rotate"> 
+            <i class="fa fa-moon-o fa-4x "> </i> 
+            </div>
+            <div class="col-md-8 box-ct">
+            <h3> Anthony Ellis </h3>
+            <p> Ruby on Rails developer based out of Durham, NC. </p> 
+            <li class="social"> 
+            <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+            <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
+            <a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+            <a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
+            </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Contact -->
+  <div id="contact" class="content-section-a">
+    <div class="container">
+      <div class="row">
+      
+      <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+        <h2>Contact Us</h2>
+        <p class="lead" style="margin-top:0">Feel free to send us a message. </p>
+      </div>
+      
+      <form role="form" action="" method="post" >
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="InputName">Your Name</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="InputEmail">Your Email</label>
+            <div class="input-group">
+              <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+              <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="InputMessage">Message</label>
+            <div class="input-group">
+              <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+            </div>
+          </div>
+
+          <input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+        </div>
+      </form>
+      
+      <hr class="featurette-divider hidden-lg">
+        <div class="col-md-5 col-md-push-1 address">
+          <address>
+          <h3>Office Location</h3>
+          <p>Communicant<br>
+          Durham, NC </a><br>
+          <br>
+          </p>
+          </address>
+
+          <h3>Social</h3>
+          <li class="social"> 
+          <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+          <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
+          <a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+          <a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <p>Communicant 2016 is a free project aiming to help parents/guardians communicate through the hardest parts of a divorce. 
+            </p>
+      
+      <!-- LICENSE -->
+      <a rel="cc:attributionURL" href="http://www.communicant-app.com"
+       property="dc:title">Communicant </a>
+       is licensed to the public under 
+       <BR>the <a rel="license"
+       href="https://opensource.org/licenses/MIT">MIT license</a>.
+       
+     
+          </div> <!-- /col-xs-7 -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/jquery-1.10.2.js"></script>
+    <script src="/js/bootstrap.js"></script>
+  <script src="/js/owl.carousel.js"></script>
+  <script src="/js/script.js"></script>
+  <!-- StikyMenu -->
+  <script src="/js/stickUp.min.js"></script>
+  <script type="text/javascript">
+    jQuery(function($) {
+    $(document).ready( function() {
+      $('.navbar-default').stickUp();
+      
+    });
+    });
+  
+  </script>
+  <!-- Smoothscroll -->
+  <script type="text/javascript" src="/js/jquery.corner.js"></script> 
+  <script src="/js/wow.min.js"></script>
+  <script>
+   new WOW().init();
+  </script>
+  <script src="/js/classie.js"></script>
+  <script src="/js/uiMorphingButton_inflow.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="/js/jquery.magnific-popup.js"></script> 
+</body>
+
+</html>
