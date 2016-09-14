@@ -77,16 +77,16 @@
           <li class="menuItem"><a href="#whatis">What is it?</a></li>
           <li class="menuItem"><a href="#screen">Screenshot</a></li>
           <li class="menuItem"><a href="#credits">Credits</a></li>
-          <li class="menuItem"><a href="#contact">Contact</a></li>
-          <% if user_signed_in? %>
-          <li class="menuItem">
-          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-          </li>
-        <% else %>
-          <li>
-          <%= link_to('Login', new_user_session_path)  %>  
-          </li>
-        <% end %>
+          <!-- <li class="menuItem"><a href="#updates">Register</a></li> -->
+          <%# if user_signed_in? %>
+          <!-- <li class="menuItem"> -->
+          <%# link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+          <!-- </li> -->
+        <%# else %>
+        <!--<li>-->          
+    <%# link_to('Login', new_user_session_path)  %>  
+          <!-- </li> -->
+        <%# end %>
         </ul>
       </div>
        
@@ -209,7 +209,7 @@
 
   </div>
   
-  <div  class="content-section-c ">
+  <div  id="updates" class="content-section-c ">
     <div class="container">
       <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center white">
@@ -255,7 +255,7 @@
             </div>
             <div class="col-md-8 box-ct">
               <h3> Rosa Lopez Sanchez </h3>
-              <p> Front End Engineer, works with Angular, Javascript, and currently updating a CakePHP based site. Based out of Durham, NC. </p>
+              <p> Front End Engineer, works with Angular, Javascript, and currently updating a CakePHP based site. Based out of Durham, NC. </p><br />
             <li class="social"> 
             <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
             <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
@@ -292,7 +292,7 @@
             </div>
             <div class="col-md-8 box-ct">
               <h3> Jasmine Baik </h3>
-              <p> Front End Engineer and graphic designer, helps teach Front End Engineering at The Iron Yard, currently working with Angular and Javascript at Glen Raven, Inc. </p>
+              <p> Front End Engineer and graphic designer, currently working with Angular and Javascript at Glen Raven, Inc. </p>
               <li class="social"> 
               <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
               <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
@@ -309,7 +309,7 @@
             </div>
             <div class="col-md-8 box-ct">
             <h3> Anthony Ellis </h3>
-            <p> Ruby on Rails developer based out of Durham, NC. </p> 
+            <p> Ruby on Rails/Perl developer based out of Durham, NC. Currently adding code to AT&T. </p><br /> 
             <li class="social"> 
             <a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
             <a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
@@ -325,7 +325,7 @@
   
   
   <!-- Contact -->
-  <div id="contact" class="content-section-a">
+  <!-- <div id="contact" class="content-section-a">
     <div class="container">
       <div class="row">
       
@@ -384,14 +384,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   
   
   
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
             <p>Communicant 2016 is a free project aiming to help parents/guardians communicate through the hardest parts of a divorce. 
             </p>
       
@@ -399,11 +398,9 @@
       <a rel="cc:attributionURL" href="http://www.communicant-app.com"
        property="dc:title">Communicant </a>
        is licensed to the public under 
-       <BR>the <a rel="license"
+       the <a rel="license"
        href="https://opensource.org/licenses/MIT">MIT license</a>.
        
-     
-          </div> <!-- /col-xs-7 -->
         </div>
       </div>
     </footer>

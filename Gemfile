@@ -23,6 +23,12 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'devise'
 
+gem 'pg'
+
+gem 'rails_12factor', group: :production
+
+gem 'puma'
+
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
 source 'https://rails-assets.org' do
